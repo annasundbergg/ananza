@@ -10,10 +10,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Auth0Provider
-        domain="dev-u213kjeag2ixlcp0.us.auth0.com"
-        clientId="aIKvhqDlljGIl5k6SEUfiQDWtXwt3Lgq"
+        domain={import.meta.env.VITE_AUTH0_DOMAIN}
+        clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
         authorizationParams={{
-          redirect_uri: "http://localhost:5173/test",
+          redirect_uri: import.meta.env.VITE_AUTH0_REDIRECT_URI,
         }}
       >
         <App />

@@ -5,7 +5,7 @@ const LoginButton = () => {
 
   return (
     <button
-      className="bg-[#CDBDFA] p-1 m-2 text-xs"
+      className="bg-[#CDBDFA] p-1 px-2 m-2 text-sm hover:outline-[#9979f0] active:outline-[#9979f0]"
       onClick={() => loginWithRedirect()}
     >
       Log In
